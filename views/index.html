@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belle Capriccio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="/">
+        <img class="header__logo" src="images/logo.png" alt="Logotipo" />
+      </a>
+    </header>
+
+    <nav class = "navbar">
+      <p class="box"><a href = "/" class = "navegacion__enlace navegacion__enlace--activo">Belle Capriccio</a></p>
+
+      <p class="box"><a class="navegacion__enlace" href="/nosotros">Quienes somos</a></p>
+      
+      <div class = "cart box">
+        <button type = "button" id = "cart-btn">
+          <i class = "fas fa-shopping-cart fa-2x"></i>
+          <span id = "cart-count-info">0</span>
+        </button>
+        
+        <div class = "cart-container">
+          <div class = "cart-list">
+           <!---- <div class = "cart-item">
+              <img src = "./images/4.jpg" alt = "product image">
+              <div class = "cart-item-info">
+                <h3 class = "cart-item-name">Top Crop</h3>
+                <span class = "cart-item-price">$15.000</span>
+                <span class = "cart-item-quantity">Unidades: 1</span>
+              </div>
+
+              <button type = "button" class = "cart-item-del-btn">
+                <i class = "fas fa-times"></i>
+              </button>
+            </div> -->          
+          </div>
+
+          <div class = "cart-total">
+            <h3>Total: </h3>
+            <span id = "cart-total-value">$0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <main class="contenedor">
+      <h1>Selecciona tu prenda favorita</h1>
+
+      <div class="grid">
+        <div class="producto">
+          <img class="producto__imagen" src="images/1.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Polera básica</p>
+            <p class="producto__precio">$15.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <!--<p class="precio1" value="15000"></p>-->
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/2.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa botones</p>
+            <p class="producto__precio">$12.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <!--<p class="precio1" value="12000"></p>-->
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/3.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa tirantes</p>
+            <p class="producto__precio">$11.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="11000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!--.producto-->
+        <div class="producto">
+          <a href="./producto4.html"
+            ><img class="producto__imagen" src="images/4.jpg" alt="imagen camisa"
+          /></a>
+          <div class="producto__informacion">
+            <p class="producto__nombre">top crop</p>
+            <p class="producto__precio">$15.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="15000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/5.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa amapola</p>
+            <p class="producto__precio">$11.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="11000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/6.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">top crop</p>
+            <p class="producto__precio">$12.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="12000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/7.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa elasticada</p>
+            <p class="producto__precio">$11.900</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="11900"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/8.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Vestido lineas</p>
+            <p class="producto__precio">$15.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="15000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/9.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa encajes</p>
+            <p class="producto__precio">$12.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="12000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/10.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">top crop</p>
+            <p class="producto__precio">$10.900</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="10900"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/11.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa Belinda</p>
+            <p class="producto__precio">$11.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="12000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number"  min="0"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/12.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa girasol</p>
+            <p class="producto__precio">$14.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="12000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/13.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa Rosalía</p>
+            <p class="producto__precio">$12.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="12000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="producto">
+          <img class="producto__imagen" src="images/14.jpg" alt="imagen camisa" />
+          <div class="producto__informacion">
+            <p class="producto__nombre">Blusa primavera</p>
+            <p class="producto__precio">$15.000</p>
+            <article>
+              <div class="item1" style="display: flex; justify-content: center">
+                <div
+                  class="informacion"
+                  style="
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 10px;
+                  "
+                >
+                  <p class="precio1" value="12000"></p>
+                  <button class="boton">Agregar al carrito</button>
+                  <input class="cantidad" type="number" min="0"/>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--.producto-->
+        <div class="grafico grafico--camisas"></div>
+        <div class="grafico grafico--node"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__texto">Belle - Capriccio 2022.</p>
+      <p>Arlegui 535, Viña del mar</p>
+      <p>contacto bellecapriccio@gmail.com</p>
+    </footer>
+    <script src="/javascripts/app.js"></script>
+  </body>
+</html>

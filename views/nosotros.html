@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belle Capriccio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+
+<body>
+  <header class="header">
+    <a href="/">
+      <img class="header__logo" src="images/logo.png" alt="Logotipo" />
+    </a>
+  </header>
+
+  <nav class = "navbar">
+    <p class="box"><a href = "/" class = "navegacion__enlace navegacion__enlace--activo">Belle Capriccio</a></p>
+
+    <p class="box"><a class="navegacion__enlace" href="/nosotros">Quienes somos</a></p>
+    
+    <div class = "cart box">
+      <button type = "button" id = "cart-btn">
+        <i class = "fas fa-shopping-cart fa-2x"></i>
+        <span id = "cart-count-info">0</span>
+      </button>
+      
+      <div class = "cart-container">
+        <div class = "cart-list">
+         <!---- <div class = "cart-item">
+            <img src = "./images/4.jpg" alt = "product image">
+            <div class = "cart-item-info">
+              <h3 class = "cart-item-name">Top Crop</h3>
+              <span class = "cart-item-price">$15.000</span>
+              <span class = "cart-item-quantity">Unidades: 1</span>
+            </div>
+
+            <button type = "button" class = "cart-item-del-btn">
+              <i class = "fas fa-times"></i>
+            </button>
+          </div> -->          
+        </div>
+
+        <div class = "cart-total">
+          <h3>Total: </h3>
+          <span id = "cart-total-value">$0</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <main class="contenedor">
+        <h1>Nosotros</h1>
+
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p>Llevamos más de 10 años en el mercado.  La empresa actualmente cuenta con más de 170 productos.
+                    Estamos presentes con sucursales propias por todo el pais, además de promotores en estas y otras ciudades.
+                </p>
+
+                <p> Escogemos para tí los mejores insumos y la más alta calidad en mano de obra. Productos garantizados y probados para tu mayor seguridad.
+                </p>
+                            </div>
+            <img class="nosotros__imagen" src="images/nosotros.jpg" alt="imagen nosotros">
+        </div>
+    </main>
+
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">¿Porqué Comprar con nosotros?</h2>
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="images/icono_1.png" alt="porque comprar">
+                <h3 class="bloque__titulo">El Mejor Precio</h3>
+                <p>Buscamos siempre el acceso para todos nuestros clientes</p>
+            </div>
+            <!--.bloque-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="images/icono_2.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Confianza</h3>
+                <p>Estamos hechos de historias… más de 10 años comprometidos con el trabajo digno, equidad de género y calidad de nuestros productos.</p>
+            </div>
+            <!--.bloque-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="images/icono_3.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Envío Gratis</h3>
+                <p>Todas las compras fuera de la ciudad cuentan con envío gratis</p>
+            </div>
+            <!--.bloque-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="images/icono_4.png" alt="porque comprar">
+                <h3 class="bloque__titulo">La Mejor Calidad</h3>
+                <p>Los mejores insumos altamente seleccionados, y mano de obra garantizada.</p>
+            </div>
+            <!--.bloque-->
+        </div>
+        <!--.bloques-->
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">Belle - Capriccio 2022.</p>
+    </footer>
+    <script src="javascripts/app.js"></script>
+
+</body>
+
+</html>
